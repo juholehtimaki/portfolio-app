@@ -20,12 +20,12 @@ export const Footer = () => {
               offset={-60}
               duration={500}
             >
-              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              <i className="fa fa-chevron-up" aria-hidden="true"></i>
             </Link>
           </div>
           <div className="col-sm-5 social">
             <a name="github-link" href="https://github.com/juholehtimaki">
-              <i class="fab fa-github" aria-hidden="true"></i>
+              <i className="fab fa-github" aria-hidden="true"></i>
             </a>
           </div>
         </div>

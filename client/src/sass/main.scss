@@ -290,28 +290,27 @@ footer {
   }
 }
 
-.navbar {
+#mynavbar {
+  align-items: center !important;
   position: fixed;
-  top: 0;
+  text-align: center;
   width: 100%;
-  a {
-    color: hotpink;
-    padding: 10px;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    .navbar-nav {
-      a {
-        color: hotpink;
+  top: 0;
+  z-index: 5;
+  .navbar-nav {
+    margin: auto;
+    a {
+      color: #374054;
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      &.active {
+        color: lightblue;
       }
     }
   }
-}
-
-.navbar-light .navbar-nav .nav-item.signup .nav-link {
-  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
