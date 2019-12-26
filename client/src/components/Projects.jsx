@@ -16,7 +16,7 @@ export const Projects = () => {
               <h3>Most of my projects can be found on GitHub</h3>
               <p>
                 Almost all of my recent projects can be found on GitHub. I
-                mostly focus developing frontend projects but often end up
+                mostly focus on developing frontend projects but often end up
                 implementing some sort of backend as well.
                 <br />
                 <strong>Tools:</strong> React, Node.js, MongoDB, Mongoose
@@ -31,9 +31,9 @@ export const Projects = () => {
             <div className="project-info">
               <h3>Platform to sell and buy videos</h3>
               <p>
-                Platform with live chat and stripe for video producers to sell
-                videos. Still in development but should be launched within few
-                months.
+                Platform with live chat and stripe for video producers to get in
+                touch with buyers and sell videos. Still in development but
+                should be launched within few months.
                 <br />
                 <strong>Tools:</strong> Python, Django & MySQL
               </p>

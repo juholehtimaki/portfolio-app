@@ -11,13 +11,14 @@ export const ContactMe = () => {
 
   const sendMessage = e => {
     e.preventDefault();
-    setMessageSent(true);
-    setTimeout(() => setMessageSent(false), 5000);
     let msg = { msgSender: email, msgText: message };
     axios
       .post("/contact", msg)
       .then(res => {
-        messageSent(true);
+        setMessageSent(true);
+        setTimeout(() => setMessageSent(false), 5000);
+        setMessage("");
+        setEmail("");
       })
       .catch(err => {
         console.log(err);

@@ -10,7 +10,7 @@ export const Education = () => {
           <span>2016 - 2019</span>
           <h4>Computer Science</h4>
           <ul>
-            <li>One course away from completing bachelor's degree</li>
+            <li>One course away from completing the bachelor's degree</li>
             <li>
               Mostly focusing on taking courses about frontend and UX design
             </li>
@@ -24,7 +24,7 @@ export const Education = () => {
           <ul>
             <li>Always been interested in economics</li>
             <li>
-              Chose to pursue different path and switched to computer science
+              Chose to pursue a different path and switched to computer science
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const sendGrid = require("@sendGrid/mail");
+const sendGrid = require("@sendgrid/mail");
 const config = require("./config.json"); //includes target email and sendgrid_api_key
 
 const app = express();
@@ -21,6 +21,13 @@ app.post("/contact", (req, res) => {
     .then(result => res.status(200).send())
     .catch(err => res.status(400).send());
 });
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}.`));
