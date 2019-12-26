@@ -81,7 +81,7 @@ $section-paddings: 70px;
       animation-delay: -3s;
     }
     .layer2 {
-      z-index: 0;
+      z-index: -1;
       width: 1.2rem;
       height: 1.2rem;
       filter: blur(3px);
@@ -89,7 +89,7 @@ $section-paddings: 70px;
       animation-duration: 8s;
     }
     .layer2.a {
-      z-index: 0;
+      z-index: -1;
       animation-delay: -4s;
     }
     .layer3 {
@@ -137,6 +137,7 @@ $section-paddings: 70px;
   height: auto;
   padding-top: $section-paddings;
   padding-bottom: $section-paddings;
+  position: relative;
   h1 {
     position: relative;
     display: inline-block;
@@ -168,6 +169,7 @@ $section-paddings: 70px;
   padding-top: $section-paddings;
   padding-bottom: $section-paddings;
   text-align: center;
+  position: relative;
   h1 {
     position: relative;
     display: inline-block;
@@ -231,6 +233,7 @@ $section-paddings: 70px;
   padding-top: $section-paddings;
   padding-bottom: $section-paddings;
   text-align: center;
+  position: relative;
   h1 {
     position: relative;
     display: inline-block;
@@ -298,6 +301,7 @@ $section-paddings: 70px;
   padding-top: $section-paddings;
   padding-bottom: $section-paddings;
   text-align: center;
+  position: relative;
   h1 {
     position: relative;
     display: inline-block;
@@ -338,6 +342,7 @@ $section-paddings: 70px;
 }
 
 .contact-me-section {
+  position: relative;
   background: $white-background;
   width: 100%;
   height: auto;
@@ -375,6 +380,7 @@ $section-paddings: 70px;
 }
 
 footer {
+  position: relative;
   background: $gray-background;
   padding: 50px 0px 50px 0px;
   .copyright {
