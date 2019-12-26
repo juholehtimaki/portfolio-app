@@ -4,12 +4,11 @@ $gray-background: #f2f2f5;
 $section-paddings: 70px;
 
 .header-section {
-  z-index: -1;
   top: 0px;
   background-image: $header-img;
   background-position: top center;
   background-position-y: -450px;
-  .container {
+  .snow-container {
     text-align: center;
     height: 60vh;
     width: 100%;
@@ -70,6 +69,7 @@ $section-paddings: 70px;
       animation-iteration-count: infinite;
     }
     .layer1 {
+      z-index: -1;
       width: 1.5rem;
       height: 1.5rem;
       filter: blur(1.5px);
@@ -77,9 +77,11 @@ $section-paddings: 70px;
       animation-duration: 6s;
     }
     .layer1.a {
+      z-index: -1;
       animation-delay: -3s;
     }
     .layer2 {
+      z-index: 0;
       width: 1.2rem;
       height: 1.2rem;
       filter: blur(3px);
@@ -87,9 +89,11 @@ $section-paddings: 70px;
       animation-duration: 8s;
     }
     .layer2.a {
+      z-index: 0;
       animation-delay: -4s;
     }
     .layer3 {
+      z-index: 0;
       width: 0.8rem;
       height: 0.8rem;
       filter: blur(6px);
@@ -97,11 +101,12 @@ $section-paddings: 70px;
       animation-duration: 10s;
     }
     .layer3.a {
+      z-index: 0;
       animation-delay: -5s;
     }
     @keyframes fall {
       100% {
-        transform: translateY(50vh);
+        transform: translateY(200vh);
       }
     }
     h1 {
@@ -360,6 +365,9 @@ $section-paddings: 70px;
     label {
       color: #636363;
       font-size: 0.9em;
+    }
+    .alert {
+      margin-top: 10px;
     }
   }
 }

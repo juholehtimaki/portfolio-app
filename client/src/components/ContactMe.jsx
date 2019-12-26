@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import FlashMessage from "react-flash-message";
+import axios from "axios";
 
 export const ContactMe = () => {
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
+  const [messageSent, setMessageSent] = useState(false);
+
+  useEffect(() => {}, [messageSent]);
 
   const sendMessage = e => {
     e.preventDefault();
-    console.log("attempting to send an email");
+    setMessageSent(true);
+    setTimeout(() => setMessageSent(false), 5000);
+    let msg = { msgSender: email, msgText: message };
+    axios
+      .post("/contact", msg)
+      .then(res => {
+        messageSent(true);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   const updateEmail = e => {
@@ -49,6 +64,15 @@ export const ContactMe = () => {
                 Send
               </button>
             </form>
+            {messageSent ? (
+              <div>
+                <FlashMessage duration={5000}>
+                  <div className="alert alert-success" role="alert">
+                    Your message was successfully sent
+                  </div>
+                </FlashMessage>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

@@ -6,16 +6,15 @@ const config = require("./config.json"); //includes target email and sendgrid_ap
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 app.post("/contact", (req, res) => {
-  console.log("attempting to send an email");
-  console.log(req.body);
   sendGrid.setApiKey(config.SENDGRID_API_KEY);
   const msg = {
     to: config.MY_EMAIL,
-    from: req.body.email,
+    from: req.body.msgSender,
     subject: "Portfolio - contact me",
-    text: req.body.msg
+    text: req.body.msgText
   };
   sendGrid
     .send(msg)

@@ -3,7 +3,7 @@ import React from "react";
 export const Header = () => {
   return (
     <div className="header-section" id="header">
-      <div className="container">
+      <div className="container snow-container">
         <div className="snow layer1 a"></div>
         <div className="snow layer1"></div>
         <div className="snow layer2 a"></div>
