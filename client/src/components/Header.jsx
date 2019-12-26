@@ -14,6 +14,7 @@ export const Header = () => {
           <strong>JUHO LEHTIMÄKI</strong>
         </h1>
         <h3>Web Developer</h3>
+        <h4>- Projects that matter</h4>
       </div>
     </div>
   );
