@@ -16,7 +16,7 @@ export const AboutMe = () => {
               studying computer science in University of Tampere for over 3
               years now. During my time there I have been working on multiple
               projects where I have been mostly doing frontend but I also have a
-              good understanding of how backend works. I constantly try to
+              good understanding of how backends work. I constantly try to
               develop, which allows me to write better and cleaner code, and
               create more complex projects.
             </p>
