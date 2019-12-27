@@ -5,7 +5,6 @@ import "./sass/main.scss";
 import { AboutMe } from "./components/AboutMe.jsx";
 import { ContactMe } from "./components/ContactMe.jsx";
 import { Education } from "./components/Education.jsx";
-//import { Experience } from "./components/Experience.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Header } from "./components/Header.jsx";
 import { NavigationBar } from "./components/NavigationBar";

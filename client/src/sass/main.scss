@@ -200,6 +200,7 @@ $section-paddings: 70px;
     padding: 15px;
     border: 1px solid #dcd9d9;
     text-align: left;
+    background: #fff;
     p {
       color: #636363;
       font-size: 0.9em;
@@ -462,5 +463,19 @@ footer {
 @media only screen and (max-width: 992px) {
   .about-me-section {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-section {
+    #main-header {
+      font-size: 2em;
+    }
+    #sub-header {
+      font-size: 1.5em;
+    }
+    #quote-header {
+      font-size: 1em;
+    }
   }
 }
