@@ -27,6 +27,12 @@ export const Footer = () => {
             <a name="github-link" href="https://github.com/juholehtimaki">
               <i className="fab fa-github" aria-hidden="true"></i>
             </a>
+            <a
+              className="linkedi-lnik"
+              href="https://linkedin.com/in/juho-lehtimaki-32aa5819a"
+            >
+              <i className="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
